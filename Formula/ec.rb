@@ -5,21 +5,21 @@
 class Ec < Formula
   desc "Command-line interface for EdControls"
   homepage "https://github.com/dutchview/edcontrols-cli"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dutchview/edcontrols-cli/releases/download/v1.3.0/edcontrols-cli_1.3.0_darwin_amd64.tar.gz"
-      sha256 "d6366a027fbbbabd12b82326aff32c0ba622f6e8bf83828efa37c81041d4b015"
+      url "https://github.com/dutchview/edcontrols-cli/releases/download/v1.4.0/edcontrols-cli_1.4.0_darwin_amd64.tar.gz"
+      sha256 "a51f194460b08cd81d804fb82f0007d4e7bb03ab0e0269c1b6bbc082f3f16a6c"
 
       define_method(:install) do
         bin.install "ec"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dutchview/edcontrols-cli/releases/download/v1.3.0/edcontrols-cli_1.3.0_darwin_arm64.tar.gz"
-      sha256 "67d7b324a3f026cf311d04e2068aa0f0d27bb9e069b9cd23e4006ab4205f12f7"
+      url "https://github.com/dutchview/edcontrols-cli/releases/download/v1.4.0/edcontrols-cli_1.4.0_darwin_arm64.tar.gz"
+      sha256 "b03ee67e1ef441b2d86cf9e3c0c4074a5fe87aa5c8078df72537a9356589a9b2"
 
       define_method(:install) do
         bin.install "ec"
@@ -29,15 +29,15 @@ class Ec < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dutchview/edcontrols-cli/releases/download/v1.3.0/edcontrols-cli_1.3.0_linux_amd64.tar.gz"
-      sha256 "cd81c84689f5fa1af2c2090d9445e03c5c14992721310b0f7d5253927e7105ca"
+      url "https://github.com/dutchview/edcontrols-cli/releases/download/v1.4.0/edcontrols-cli_1.4.0_linux_amd64.tar.gz"
+      sha256 "8e4ff51c24799bd72fe14eabc75e99aed352beb5fcfbd3ca6a905841b97cbb01"
       define_method(:install) do
         bin.install "ec"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dutchview/edcontrols-cli/releases/download/v1.3.0/edcontrols-cli_1.3.0_linux_arm64.tar.gz"
-      sha256 "353f4482d3c6f662fd509df73a8a86a05c1ef1519dae2d06ff5d46ad968ccec4"
+      url "https://github.com/dutchview/edcontrols-cli/releases/download/v1.4.0/edcontrols-cli_1.4.0_linux_arm64.tar.gz"
+      sha256 "352c9e2265cf6c2a59330c64824ea6398826f2e02990131ca41b8e1ab0e94466"
       define_method(:install) do
         bin.install "ec"
       end
