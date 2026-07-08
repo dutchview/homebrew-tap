@@ -5,21 +5,21 @@
 class Hubspot < Formula
   desc "Command-line interface for HubSpot CRM"
   homepage "https://github.com/dutchview/hubspot-cli"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dutchview/hubspot-cli/releases/download/v0.2.0/hubspot-cli_0.2.0_darwin_amd64.tar.gz"
-      sha256 "d4e932567aa1debdd217b5d122c2f76789c862b6fbf21081f0599c87a3ad0442"
+      url "https://github.com/dutchview/hubspot-cli/releases/download/v0.2.1/hubspot-cli_0.2.1_darwin_amd64.tar.gz"
+      sha256 "4425aa4b5e6b7f99f32ce29bfb13999269d2bdcd421ccc527f8a18b43eb96190"
 
       define_method(:install) do
         bin.install "hubspot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dutchview/hubspot-cli/releases/download/v0.2.0/hubspot-cli_0.2.0_darwin_arm64.tar.gz"
-      sha256 "18e80ad56f10027de71e6b0708f6d53755fcd0e11eebab19f3ae16e0f3f37b3b"
+      url "https://github.com/dutchview/hubspot-cli/releases/download/v0.2.1/hubspot-cli_0.2.1_darwin_arm64.tar.gz"
+      sha256 "bf449a3c6fea6df6d70efd7bd95cd3aae22079385059a87e6cbca54157555758"
 
       define_method(:install) do
         bin.install "hubspot"
@@ -29,15 +29,15 @@ class Hubspot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dutchview/hubspot-cli/releases/download/v0.2.0/hubspot-cli_0.2.0_linux_amd64.tar.gz"
-      sha256 "4327fd370b32d26f5f488dd64936ee2f58c17559d6d1d2356b084bff7a26ac0c"
+      url "https://github.com/dutchview/hubspot-cli/releases/download/v0.2.1/hubspot-cli_0.2.1_linux_amd64.tar.gz"
+      sha256 "a18bb7f225dafd24fb552f7427c5756bf05355ba3d74f127ddc9bb666deddb3d"
       define_method(:install) do
         bin.install "hubspot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dutchview/hubspot-cli/releases/download/v0.2.0/hubspot-cli_0.2.0_linux_arm64.tar.gz"
-      sha256 "23b70b967ad443e5417d5a3f35a0354fd6cec7f797b85a309e2f28d274231171"
+      url "https://github.com/dutchview/hubspot-cli/releases/download/v0.2.1/hubspot-cli_0.2.1_linux_arm64.tar.gz"
+      sha256 "47a19745f752d73bf1f66f85e7f859a45fa3d567744a8c6cbd367e8ae553d18d"
       define_method(:install) do
         bin.install "hubspot"
       end
